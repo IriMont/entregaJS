@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    
+}
+
+/*Menú principal*/
+
+header{
+    overflow: hidden;
+    cursor: default;
+}
+
+header div{
+    font-family: 'Fredoka One', cursive;
+    margin-left: -30px;
+}
+
+.navbar{
+    margin-left: 60px;
+}
+
+.navbar-collapse{
+    display: flex;
+    margin-left: 140px;
+}
+
+#navbarTogglerDemo03 ul li a{
+    color: gainsboro;
+    font-size: 18px;
+}
+
+.navbar-collapse .nav-item{
+    padding: 20px 60px;
+    margin-left: 20px;
+}
+
+.container-fluid h1{
+    color: gainsboro;
+}
+
+.nav-link {
+    background: transparent;
+    color: gainsboro;
+}
+
+.nav-link:hover{
+    transform: translateY(10px);
+}
+
+@media screen and (max-width: 480px){
+    header div{
+        font-family: 'Fredoka One', cursive;
+        margin-left: -10px;
+    }
+
+    .container-fluid h1{
+        color: gainsboro;
+        font-size: 15px;
+        margin-top: 25px;
+        margin-right: 10px;
+    }
+
+    #navbarTogglerDemo03 ul li a{
+        color: gainsboro;
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+/*Foto de portada*/
+
+.inicio{
+    background-image: url(img/Principal.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.site-header:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #333333;
+    opacity: 0.7;
+}
+#cabecera{
+    position: relative;
+    margin-top: 120px;
+    margin-left: 200px;
+    color: gainsboro;
+    font-size: 40px;
+}
+
+#titular{
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 480px){
+    .inicio{
+        width: 100%;
+    }
+
+    .site-header:before{
+        width: 890px;
+        
+    }
+
+}
+
+
+/*Segunda parte*/
+
+.filterMenu{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    padding: 4px;
+    margin: 0 0 60px;
+    
+}
+
+.filterMenu li{
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    font-weight: 700;
+    padding: 0 80px;
+    min-width: 130px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;;
+}
+
+.filterMenu li.current,
+.filterMenu li:hover{
+    background-color: chocolate;
+    color: whitesmoke;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .card-1.active{
+    position: relative;
+    display: flex;
+    width: 30%;
+
+}
+
+.container .card-1.delete{
+    position: relative;
+    display: flex;
+    width: 0%;
+}
+
+
+.card-1{
+    position: relative;
+    width: 350px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.card-img-top{
+    display: block;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.imageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imageOverlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.imageOverlay:hover{
+    opacity: 1;
+}
+
+.imageOverlay:hover > *{
+    transform: translateY(0);
+}
+
+.card-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-price .precio{
+    font-size: 23px;
+}
+
+
+#carta {
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Carta .card img{
+    height: 170px;
+    width: 220px;
+    margin-left: 15%;
+}
+
+#Carta .card-img-top .card-body {
+    height: 170px;
+    width: 220px;
+}
+
+/*Tercera parte*/
+
+#tabla-compra{
+    width: 70%;
+    margin-left: 190px;
+    margin-bottom: 30px;
+    background-color: #f8edeb;
+}
+
+.compraTotal{
+    margin-left: 120px;
+    margin-right: 140px;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #f8edeb;
+}
+
+h3{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.table{
+    padding-right: 20px;
+}
+
+.table thead th{
+    font-size: 15px;
+    padding-left: 70px;
+}
+
+.ItemCarrito .table__productos{
+    padding-left: 35px;
+}
+
+.ItemCarrito .table__productos img{
+    margin-left: 40px;
+}
+
+.ItemCarrito .table__productos h6{
+    margin-left: 40px;
+    margin-right: -40px;
+}
+
+.ItemCarrito .table__price p{
+    padding-left: 75px;
+}
+
+.ItemCarrito .table__cantidad .num{
+    width: 50px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.ItemCarrito .table__cantidad button{
+    background-color: #e56b6f;
+    border: #e56b6f;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+
+
+.row .col .cartTotal{
+    padding-left: 140px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.row .col button{
+    margin-left: 10px;
+    margin-bottom: 25px;
+    background-color: chocolate;
+    border: chocolate;
+    font-weight: bold;
+}
+
+
+
+
+/*Cuarta parte*/
+  
+.subintro1{
+    margin-top: 20px;
+    margin-bottom: -15px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.subintro{
+    padding-left: 60px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 60px;
+    background-color: #f8edeb;
+
+}
+
+.card{
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px  10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.firstContainer{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 35px;
+    padding: 5px 45px;
+    width: 50%;
+}
+
+.secondContainer{
+    margin-right: 6%;
+    margin-left: -4%;
+    margin-top: 35px;
+    padding: 5px 45px;
+    width: 50%;
+}
+
+#formatoPedido{
+    overflow: hidden;
+}
+
+
+/*Cuarta parte*/
+
+footer{
+    position: relative;
+    background-color: chocolate;
+    padding-bottom: 10px;
+}
+
+footer div p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-left: 560px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+footer i{
+    padding-left: 10px;
+}

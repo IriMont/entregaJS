@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/af21386326.js" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Dulce Chispa. Venta de postres y detalles</title>
+</head>
+<body>
+    <header class="site-header inicio">
+        
+        <div>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1>DULCE CHISPA</h1>
+
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#carta">NUESTRA CARTA <i class="fas fa-utensils"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#formatoPedido">CÓMO PEDIR <i class="fas fa-mobile-alt"></i> <i class="fas fa-car"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div id="cabecera">
+            <p id="titular"></p>
+          </div>
+        </div>
+    </header>
+
+
+
+  <!--Primera sección-->
+
+  <section>
+      <h2 id="carta">Nuestra carta</h2>
+
+        <div class="col-md-12 text-center">
+          <ul class="filterMenu">
+           <li class="active" data-target="all">Todo</li>
+            <li data-target="Tortas">Tortas</li>
+            <li data-target="Antojos">Antojos</li>          
+          </ul>
+        </div>
+
+          <div class="container">
+              <div class="card-1" data-item="Tortas">
+                  <img src="img/Blueberry.PNG" class="card-img-top" alt="cheesecake">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Cheesecake de arándanos</h5>
+                      <h6 class="card-price">S/ <span class="precio">70</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Tortas">
+                  <img src="img/Apple pie.PNG" class="card-img-top" alt="apple pie">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Pie de manzana</h5>
+                      <h6 class="card-price">S/ <span class="precio">40</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Antojos">
+                  <img src="img/Tiramprc.PNG" class="card-img-top" alt="Tiramisu">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Tiramisú (porción) </h5>
+                      <h6 class="card-price">S/ <span class="precio">15</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Tortas">
+                  <img src="img/Carrot cake.PNG" class="card-img-top" alt="selva negra">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Carrot cake</h5>
+                      <h6 class="card-price">S/ <span class="precio">60</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Tortas">
+                  <img src="img/Budin.PNG" class="card-img-top" alt="budin">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Budín</h5>
+                      <h6 class="card-price">S/ <span class="precio">30</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Antojos">
+                  <img src="img/cupcake.JPG" class="card-img-top" alt="orejitas">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Cupcake chocolate</h5>
+                      <h6 class="card-price">S/ <span class="precio">8</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Antojos">
+                  <img src="img/macarons.JPG" class="card-img-top" alt="cookie">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Macarons (x12) </h5>
+                      <h6 class="card-price">S/ <span class="precio">10</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Tortas">
+                  <img src="img/Red velvet.PNG" class="card-img-top" alt="red velvet">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Red velvet</h5>
+                      <h6 class="card-price">S/ <span class="precio">80</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+              <div class="card-1" data-item="Tortas">
+                  <img src="img/crocante.JPG" class="card-img-top" alt="red velvet">
+                  <div class="imageOverlay">
+                      <h5 class="card-title">Crocante</h5>
+                      <h6 class="card-price">S/ <span class="precio">35</span></h6>
+                      <button type="button" class="btn btn-primary boton" data-id="2">Agregar a carrito</button>
+                  </div>
+              </div>
+      </div>  
+  </section>
+
+
+  <!--Segunda sección-->
+  <section id="tabla-compra">
+    <div class="compraTotal">
+      
+
+      <div id="carrito">
+        <h3>Tu compra</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio (S/) </th>
+                <th scope="col">Cantidad</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+
+        <div class="row mx-4">
+            <div class="col">
+                <p class="cartTotal">Total: 0</p>
+            </div>
+            <div class="col d-flex justify content-end">
+                <button class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!--Tercera sección-->
+
+  <section id="formatoPedido">
+    <div class="subintro1">
+    </div>
+    <div class="subintro">
+    </div>
+    <div class="card-container">
+      <div class="firstContainer">
+        <div class="card">
+          <div class="card-body">
+            <h4 id="efectoPrimero">Recoge en tienda</h4>
+            <p class="card-text">Escríbenos por Whatsapp para coordinar la reserva del postre que deseas. Recuerda que necesitamos 2 días de anticipación para las tortas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="secondContainer">
+        <div class="card">
+          <div class="card-body">
+            <h4 id="efectoSegundo">Delivery a donde quieras</h4>
+            <p class="card-text">Elige lo que quieras desde nuestra web y nosotros nos encargamos de llevarlo al sitio que tú indiques. Aplica a nivel nacional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--Footer-->
+  <footer>
+      <div>
+          <p>DULCE CHISPA <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i></p>
+      </div>
+  </footer>
+
+
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
