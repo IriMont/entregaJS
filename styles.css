@@ -69,9 +69,6 @@ header div{
 
 }
 
-
-
-
 /*Foto de portada*/
 
 .inicio{
@@ -115,7 +112,7 @@ header div{
 }
 
 
-/*Segunda parte*/
+/*Carta de productos*/
 
 .filterMenu{
     display: inline-block;
@@ -246,7 +243,7 @@ header div{
     width: 220px;
 }
 
-/*Tercera parte*/
+/*Tabla de compra*/
 
 #tabla-compra{
     width: 70%;
@@ -325,9 +322,7 @@ h3{
 }
 
 
-
-
-/*Cuarta parte*/
+/*Formatos de pedidos*/
   
 .subintro1{
     margin-top: 20px;
@@ -389,7 +384,7 @@ h3{
 }
 
 
-/*Cuarta parte*/
+/*Footer*/
 
 footer{
     position: relative;

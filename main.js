@@ -63,7 +63,7 @@ function renderCarrito(){
    
 }
 
-// Calcular monto total de compra
+//Calcular monto total de compra
 function carritoTotal(){
     let Total = 0;
     const itemCartTotal = document.querySelector('.cartTotal')
@@ -105,7 +105,7 @@ window.onload = function(){
     }
 }
 
-//CATEGORÍAS DE PRODUCTOS
+//Filtro segun tipo de productos
 const filterItems = document.querySelector('.filterMenu').children;
 const itemsCategories = document.querySelector('.container').children;
 
@@ -142,7 +142,7 @@ $("#titular").prepend("<p>Sorprende siempre con los mejores dulces</p>");
 $('.subintro1').prepend("<p>Cómo pedir</p>");
 $(".subintro").prepend("<p>Queremos que tu compra sea sencilla y de acuerdo a lo que necesites. Conoce la mejor opción para ti.</p>")
 
-//EVENTO EN TERCERA SECCIÓN
+//EVENTO EN FORMATOS DE PEDIDOS
 let despacho=document.getElementById("efectoPrimero");
 
 despacho.onmouseover=function(){
