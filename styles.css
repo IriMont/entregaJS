@@ -59,7 +59,11 @@ header div{
         color: gainsboro;
         font-size: 15px;
         margin-top: 25px;
-        margin-right: 10px;
+        margin-right: 70px;
+    }
+
+    .container-fluid button{
+        margin-left: -30px;
     }
 
     #navbarTogglerDemo03 ul li a{
@@ -103,10 +107,23 @@ header div{
     .inicio{
         width: 100%;
     }
-
+    
     .site-header:before{
-        width: 890px;
-        
+        width: 740px;
+    }
+
+    #cabecera{
+        margin-left: 50px;
+        font-size: 25px;
+    }
+
+    #titular{
+        padding-left: 20px;
+        text-align: center;
+        margin-left: -30px;
+        margin-right: 62px;
+        padding-top: 0px;
+
     }
 
 }
@@ -226,22 +243,43 @@ header div{
     text-align: center;
 }
 
-.tarjetas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media screen and (max-width: 480px){
+    .card-1 .card-img-top{
+        display: relative;
+    }
+
+    .card-1{
+        width: 150px;
+        height: 120px;
+    }
+
+    .container .card-1.active{
+        position: relative;
+        display: flex;
+        width: 10px;
+        height: 10px;
+        margin-left: 20px;
+    }
+
+    .card-title{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+    .imageOverlay button{
+        width: 90px;
+        height: 20px;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        padding-left: 5px;
+        padding-top: 1px;
+        background-color: chocolate;
+        border: chocolate;
+    }
 }
 
-#Carta .card img{
-    height: 170px;
-    width: 220px;
-    margin-left: 15%;
-}
-
-#Carta .card-img-top .card-body {
-    height: 170px;
-    width: 220px;
-}
 
 /*Tabla de compra*/
 
@@ -322,6 +360,35 @@ h3{
 }
 
 
+@media screen and (max-width: 480px){
+    #tabla-compra{
+        width: 70%;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        background-color: #f8edeb;
+    }
+    
+    .compraTotal{
+        margin-left: 20px;
+        margin-right: 90px;
+        margin-top: 10px;
+        align-items: center;
+        background-color: #f8edeb;
+    }
+
+    .table{
+        padding-right: 70px;
+    }
+    
+    .table thead th{
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    
+    
+}
+
+
 /*Formatos de pedidos*/
   
 .subintro1{
@@ -347,7 +414,6 @@ h3{
     flex-direction: row;
     margin: 30px 60px;
     background-color: #f8edeb;
-
 }
 
 .card{
@@ -383,6 +449,45 @@ h3{
     overflow: hidden;
 }
 
+@media screen and (max-width: 480px){
+    .subintro1{
+        font-size: 23px;
+    }
+    .subintro{
+        padding-left: 18px;
+        font-size: 13px;
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #f8edeb;
+        width: 190%;
+        font-size: 11px;
+        margin: 10px 30px;
+    }
+
+    .firstContainer{
+        margin-left: -4px;
+        margin-right: 6%;
+        margin-top: 25px;
+        padding: 5px 45px;
+        width: 50%;
+    }
+    
+    .secondContainer{
+        margin-right: 6%;
+        margin-left: -1%;
+        margin-top: 15px;
+        padding: 5px 45px;
+        width: 50%;
+    }
+
+    .card-body .efectoPrimero{
+        font-size: 12px;
+
+    }
+}
 
 /*Footer*/
 
@@ -404,4 +509,11 @@ footer div p{
 
 footer i{
     padding-left: 10px;
+}
+
+@media screen and (max-width: 480px){
+    footer div p{
+        font-size: 10px;
+        padding-left: 130px;
+    }
 }
